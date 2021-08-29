@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\service",
+    "\\src\\app\\service\\api",
+    "\\src\\app\\template",
+    "\\src\\app\\template\\student-subject-grade",
+    "\\src\\app\\template\\subject",
+    "\\src\\app\\template\\teacher",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\template\\student-subject-grade\\student-subject-grade.component.ts",
+  "PreviewInSolutionExplorer": false
+}

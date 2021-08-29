@@ -1,0 +1,27 @@
+<h1>Lista de Docentes</h1>
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Identificacion</th>
+        <th scope="col">Docente</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Titulo Academico</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let teacher of teachers; let i= index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{teacher.identification}}</td>
+        <td>{{teacher.lastName + ' '+ teacher.firstName}}</td>
+        <td>{{teacher.country}}</td>
+        <td>{{teacher.city}}</td>
+        <td>{{teacher.address}}</td>
+        <td>{{teacher.tituloAcademico}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

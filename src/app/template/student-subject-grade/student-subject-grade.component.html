@@ -1,0 +1,35 @@
+<h1>Calificaciones de los Estudiantes por Materia</h1>
+
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre de la Materia</th>
+        <th scope="col">Estudiante</th>
+        <th scope="col">Ciclo</th>
+        <th scope="col">Paralelo</th>
+        <th scope="col">Calificación Deberes</th>
+        <th scope="col">Calificación Examen</th>
+        <th scope="col">Promedio</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Docente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let gradeStudent of gradeStudents; let i= index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{gradeStudent.subject.name}}</td>
+        <td>{{gradeStudent.student.lastName + ' '+ gradeStudent.student.firstName}}</td>
+        <td>{{gradeStudent.student.ciclo}}</td>
+        <td>{{gradeStudent.student.parallel}}</td>
+        <td>{{gradeStudent.homework_grade}}</td>
+        <td>{{gradeStudent.test_grade}}</td>
+        <td>{{gradeStudent.average}}</td>
+        <td>{{gradeStudent.status_Subject}}</td>
+        <td>{{gradeStudent.subject.teacher.lastName + ' '+ gradeStudent.subject.teacher.firstName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

@@ -1,0 +1,30 @@
+<h1>Lista de Estudiantes</h1>
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Identificacion</th>
+        <th scope="col">Docente</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Ciclo</th>
+        <th scope="col">Paralelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; let i= index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{student.identification}}</td>
+        <td>{{student.lastName + ' '+ student.firstName}}</td>
+        <td>{{student.country}}</td>
+        <td>{{student.city}}</td>
+        <td>{{student.address}}</td>
+        <td>{{student.ciclo}}</td>
+        <td>{{student.parallel}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
